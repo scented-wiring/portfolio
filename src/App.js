@@ -40,6 +40,9 @@ const App = () => {
           </motion.div>
         </div>
       </div>
+      <div id="navbar">
+        <div className="nav">About</div> <div className="nav">Projects</div>
+      </div>
     </div>
   );
 };
