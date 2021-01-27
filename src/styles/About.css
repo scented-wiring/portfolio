@@ -1,6 +1,7 @@
 #About {
   display: flex;
   flex-direction: column;
+  margin-top: 150px;
 }
 
 #about-box {
