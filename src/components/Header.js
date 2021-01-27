@@ -18,7 +18,17 @@ const Header = () => {
           animate={{ x: 0 }}
           transition={{ type: "spring", duration: 1 }}
         >
-          <div id="title">Tom Hammersley - Portfolio</div>
+          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <HashLink
+              to="#About"
+              scroll={(el) => {
+                el.scrollIntoView(true);
+                window.scrollBy(0, -150);
+              }}
+            >
+              <div id="title">Tom Hammersley - Portfolio</div>
+            </HashLink>
+          </motion.div>
         </motion.div>
         <motion.div
           initial={{ x: -700 }}
@@ -85,7 +95,6 @@ const Header = () => {
         <div id="navbar">
           <motion.div whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}>
             <HashLink
-              smooth
               to="#About"
               scroll={(el) => {
                 el.scrollIntoView(true);
@@ -96,7 +105,15 @@ const Header = () => {
             </HashLink>
           </motion.div>
           <motion.div whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}>
-            <div className="nav">Projects</div>
+            <HashLink
+              to="#Projects"
+              scroll={(el) => {
+                el.scrollIntoView(true);
+                window.scrollBy(0, -150);
+              }}
+            >
+              <div className="nav">Projects</div>
+            </HashLink>
           </motion.div>
         </div>
       </motion.div>

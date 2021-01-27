@@ -38,7 +38,7 @@ const About = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <div id="about-box">
+        <div className="box">
           <div className="heading">
             <h1>About Me</h1>
             <img id="tom" src={tom} alt="Tom Hammersley" />
@@ -59,7 +59,7 @@ const About = () => {
           projects to expand on my knowledge and learn new technologies.
           <div className="heading">
             <h2>Technologies</h2>
-            <h3>Proficient in -</h3>
+            <h3>Proficient in:</h3>
             <FadeInWhenVisible>
               <div id="technologies">
                 <div className="technology">
@@ -88,7 +88,7 @@ const About = () => {
                 </div>
               </div>
             </FadeInWhenVisible>
-            <h3>Currently learning -</h3>
+            <h3>Currently learning:</h3>
             <FadeInWhenVisible>
               <div id="technologies">
                 <div className="technology">
