@@ -20,3 +20,8 @@ a {
   color: inherit;
   text-decoration: inherit;
 }
+
+h1 {
+  margin: 0 0 25px 0;
+  padding: 0;
+}

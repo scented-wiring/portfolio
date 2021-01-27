@@ -19,7 +19,6 @@
 
 #links {
   display: flex;
-  justify-self: flex-end;
   font-size: 12px;
   margin-left: auto;
   margin-right: 20px;

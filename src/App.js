@@ -24,7 +24,7 @@ const App = () => {
         <motion.div
           initial={{ x: -700 }}
           animate={{ x: 700 }}
-          transition={{ type: "spring", duration: 1 }}
+          transition={{ duration: 1 }}
         >
           <div id="links">
             <motion.div whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}>
