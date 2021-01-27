@@ -3,32 +3,33 @@ import { HashLink } from "react-router-hash-link";
 import "../styles/Header.css";
 
 const Header = () => {
+  const AnimateLink = ({ children }) => {
+    return (
+      <motion.div whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}>
+        {children}
+      </motion.div>
+    );
+  };
+
   return (
     <div id="Header">
-      <motion.header
-        whileHover={{
-          scale: 1.2,
-          transition: { duration: 1 },
-        }}
-        whileTap={{ scale: 0.9 }}
-      />
       <div id="top">
         <motion.div
           initial={{ x: 800 }}
           animate={{ x: 0 }}
           transition={{ type: "spring", duration: 1 }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
         >
-          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-            <HashLink
-              to="#About"
-              scroll={(el) => {
-                el.scrollIntoView(true);
-                window.scrollBy(0, -150);
-              }}
-            >
-              <div id="title">Tom Hammersley - Portfolio</div>
-            </HashLink>
-          </motion.div>
+          <HashLink
+            to="#About"
+            scroll={(el) => {
+              el.scrollIntoView(true);
+              window.scrollBy(0, -150);
+            }}
+          >
+            <div id="title">Tom Hammersley - Portfolio</div>
+          </HashLink>
         </motion.div>
         <motion.div
           initial={{ x: -700 }}
@@ -36,7 +37,7 @@ const Header = () => {
           transition={{ duration: 1 }}
         >
           <div id="links">
-            <motion.div whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}>
+            <AnimateLink>
               <a
                 href="https://www.linkedin.com/in/tom-hammersley-3b0b4b203/"
                 target="_blank"
@@ -47,8 +48,8 @@ const Header = () => {
                   LinkedIn
                 </div>
               </a>
-            </motion.div>
-            <motion.div whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}>
+            </AnimateLink>
+            <AnimateLink>
               <a
                 href="https://twitter.com/scentedwiring"
                 target="_blank"
@@ -59,8 +60,8 @@ const Header = () => {
                   Twitter
                 </div>
               </a>
-            </motion.div>
-            <motion.div whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}>
+            </AnimateLink>
+            <AnimateLink>
               <a
                 href="https://github.com/scented-wiring"
                 target="_blank"
@@ -71,8 +72,8 @@ const Header = () => {
                   Github
                 </div>
               </a>
-            </motion.div>
-            <motion.div whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}>
+            </AnimateLink>
+            <AnimateLink>
               <a
                 href="mailto:thomas.j.hammersley@gmail.com"
                 target="_blank"
@@ -83,7 +84,7 @@ const Header = () => {
                   Email
                 </div>
               </a>
-            </motion.div>
+            </AnimateLink>
           </div>
         </motion.div>
       </div>
@@ -93,7 +94,7 @@ const Header = () => {
         transition={{ duration: 1 }}
       >
         <div id="navbar">
-          <motion.div whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}>
+          <AnimateLink>
             <HashLink
               to="#About"
               scroll={(el) => {
@@ -103,8 +104,8 @@ const Header = () => {
             >
               <div className="nav">About</div>
             </HashLink>
-          </motion.div>
-          <motion.div whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}>
+          </AnimateLink>
+          <AnimateLink>
             <HashLink
               to="#Projects"
               scroll={(el) => {
@@ -114,7 +115,7 @@ const Header = () => {
             >
               <div className="nav">Projects</div>
             </HashLink>
-          </motion.div>
+          </AnimateLink>
         </div>
       </motion.div>
     </div>

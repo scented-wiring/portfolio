@@ -5,7 +5,7 @@ import tom from "../images/me.jpg";
 import "../styles/About.css";
 
 const About = () => {
-  function FadeInWhenVisible({ children }) {
+  const FadeInWhenVisible = ({ children }) => {
     const controls = useAnimation();
     const [ref, inView] = useInView();
 
@@ -29,7 +29,7 @@ const About = () => {
         {children}
       </motion.div>
     );
-  }
+  };
 
   return (
     <div id="About">
