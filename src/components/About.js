@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
-import tom from "./me.jpg";
-import "./About.css";
+import tom from "../images/me.jpg";
+import "../styles/About.css";
 
 const About = () => {
   function FadeInWhenVisible({ children }) {

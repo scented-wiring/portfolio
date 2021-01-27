@@ -1,7 +1,7 @@
 import { Link, Switch, Route } from "react-router-dom";
 import { motion } from "framer-motion";
 import About from "./About";
-import "./App.css";
+import "../styles/App.css";
 
 const App = () => {
   return (
