@@ -34,9 +34,11 @@
 
 #navbar {
   display: flex;
-  background: lightgray;
   padding: 15px 0 15px 0;
   font-size: 16px;
+  background: lightpink;
+  color: black;
+  font-weight: bold;
 }
 
 .nav {
