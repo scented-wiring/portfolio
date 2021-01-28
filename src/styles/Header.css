@@ -1,3 +1,7 @@
+#Header-wrap {
+  position: absolute;
+}
+
 #Header {
   display: flex;
   flex-direction: column;
