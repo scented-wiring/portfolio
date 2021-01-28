@@ -1,0 +1,28 @@
+#project-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project {
+  margin: 10px;
+}
+
+.screenshot {
+  width: 350px;
+  border: 2px solid black;
+}
+
+.description {
+  display: none;
+}
+
+.description-show {
+  display: flex;
+  margin: 2px;
+  justify-content: center;
+  position: absolute;
+  background: rgba(224, 224, 224, 0.7);
+  width: 350px;
+  height: 186px;
+}
