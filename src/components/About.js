@@ -58,28 +58,28 @@ const About = () => {
           <FadeInWhenVisible>
             <div id="technologies">
               <div className="technology">
-                <i class="fab fa-js-square fa-3x"></i>Javascript
+                <i className="fab fa-js-square fa-3x"></i>Javascript
               </div>
               <div className="technology">
-                <i class="fab fa-react fa-3x"></i>React
+                <i className="fab fa-react fa-3x"></i>React
               </div>
               <div className="technology">
-                <i class="fas fa-satellite-dish fa-3x"></i>express.js
+                <i className="fas fa-satellite-dish fa-3x"></i>express.js
               </div>
               <div className="technology">
-                <i class="fas fa-database fa-3x"></i>MySQL
+                <i className="fas fa-database fa-3x"></i>MySQL
               </div>
               <div className="technology">
-                <i class="fas fa-check-circle fa-3x"></i>Jest & Enzyme
+                <i className="fas fa-check-circle fa-3x"></i>Jest & Enzyme
               </div>
               <div className="technology">
-                <i class="fab fa-node fa-3x"></i>Node.js
+                <i className="fab fa-node fa-3x"></i>Node.js
               </div>
               <div className="technology">
-                <i class="far fa-file-code fa-3x"></i>HTML
+                <i className="far fa-file-code fa-3x"></i>HTML
               </div>
               <div className="technology">
-                <i class="fas fa-paint-brush fa-3x"></i>CSS
+                <i className="fas fa-paint-brush fa-3x"></i>CSS
               </div>
             </div>
           </FadeInWhenVisible>
@@ -87,10 +87,10 @@ const About = () => {
           <FadeInWhenVisible>
             <div id="technologies">
               <div className="technology">
-                <i class="fas fa-keyboard fa-3x"></i>Typescript
+                <i className="fas fa-keyboard fa-3x"></i>Typescript
               </div>
               <div className="technology">
-                <i class="fab fa-vuejs fa-3x"></i>Vue
+                <i className="fab fa-vuejs fa-3x"></i>Vue
               </div>
             </div>
           </FadeInWhenVisible>

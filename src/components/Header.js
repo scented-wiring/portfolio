@@ -45,7 +45,7 @@ const Header = () => {
                   rel="noreferrer"
                 >
                   <div className="link">
-                    <i class="fab fa-linkedin fa-3x"></i>
+                    <i className="fab fa-linkedin fa-3x"></i>
                     LinkedIn
                   </div>
                 </a>
@@ -57,7 +57,7 @@ const Header = () => {
                   rel="noreferrer"
                 >
                   <div className="link">
-                    <i class="fab fa-twitter-square fa-3x"></i>
+                    <i className="fab fa-twitter-square fa-3x"></i>
                     Twitter
                   </div>
                 </a>
@@ -69,7 +69,7 @@ const Header = () => {
                   rel="noreferrer"
                 >
                   <div className="link">
-                    <i class="fab fa-github-square fa-3x"></i>
+                    <i className="fab fa-github-square fa-3x"></i>
                     Github
                   </div>
                 </a>
@@ -81,7 +81,7 @@ const Header = () => {
                   rel="noreferrer"
                 >
                   <div className="link">
-                    <i class="fas fa-envelope-square fa-3x"></i>
+                    <i className="fas fa-envelope-square fa-3x"></i>
                     Email
                   </div>
                 </a>

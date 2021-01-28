@@ -18,6 +18,7 @@ const Projects = () => {
                   onMouseOver={() => setHover(project.name)}
                   onMouseOut={() => setHover("")}
                   style={{ backgroundImage: `url(${project.image})` }}
+                  key={projectsArray.indexOf(project)}
                 >
                   <div
                     className={
