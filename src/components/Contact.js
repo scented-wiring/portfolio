@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from "axios";
 import "../styles/Contact.css";
 
 const Contact = () => {
@@ -12,9 +13,20 @@ const Contact = () => {
 
   const [form, setForm] = useState(initialState.form);
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(form);
+    document.getElementById("contact-form").reset();
+    axios
+      .post("http://localhost:5000/contact", form)
+      .then(() => {
+        console.log("Email sent.");
+        setForm(initialState.form);
+      })
+      .catch(() => {
+        console.log("Error.");
+      });
+  };
+  /*
     let response = await fetch("http://localhost:5000/contact", {
       method: "POST",
       headers: {
@@ -24,7 +36,9 @@ const Contact = () => {
     });
     let result = await response.json();
     alert(result.status);
+
   };
+      */
 
   const handleFieldChange = (event) => {
     setForm({ ...form, [event.target.name]: event.target.value });
