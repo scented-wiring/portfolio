@@ -25,7 +25,7 @@ const projectsArray = [
   {
     name: "Portfolio",
     description: "This website!",
-    technologies: "Built with React.",
+    technologies: "Built with React and Express.",
     image: portfolio,
   },
   {

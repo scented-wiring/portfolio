@@ -1,3 +1,4 @@
+import { FadeInWhenVisible, AnimateLink } from "./helpers/index";
 import { useState } from "react";
 import axios from "axios";
 import "../styles/Contact.css";
@@ -12,33 +13,34 @@ const Contact = () => {
   };
 
   const [form, setForm] = useState(initialState.form);
+  const [buttonState, setButtonState] = useState("SEND");
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    document.getElementById("contact-form").reset();
-    axios
-      .post("http://localhost:5000/contact", form)
-      .then(() => {
-        console.log("Email sent.");
-        setForm(initialState.form);
-      })
-      .catch(() => {
-        console.log("Error.");
-      });
+    if (buttonState === "SEND") {
+      setButtonState("SENDING...");
+      axios
+        .post("http://localhost:5000/contact", form)
+        .then(() => {
+          setForm(initialState.form);
+          document.getElementById("contact-form").reset();
+          document.getElementById("submit").style.background = "#8BFEB5";
+          setButtonState("SENT!");
+          setTimeout(function () {
+            setButtonState("SEND");
+            document.getElementById("submit").style.background = "white";
+          }, 2000);
+        })
+        .catch(() => {
+          document.getElementById("submit").style.background = "#FB6F5C";
+          setButtonState("ERROR!");
+          setTimeout(function () {
+            setButtonState("SEND");
+            document.getElementById("submit").style.background = "white";
+          }, 2000);
+        });
+    }
   };
-  /*
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(form),
-    });
-    let result = await response.json();
-    alert(result.status);
-
-  };
-      */
 
   const handleFieldChange = (event) => {
     setForm({ ...form, [event.target.name]: event.target.value });
@@ -49,27 +51,45 @@ const Contact = () => {
       <div className="box">
         <div className="heading">
           <h1>Contact</h1>
-          <form id="contact-form" onSubmit={handleSubmit}>
-            <label htmlFor="name">
-              Name:
-              <input id="name" name="name" onChange={handleFieldChange} />
-            </label>
-            <label htmlFor="email">
-              Email:
-              <input id="email" name="email" onChange={handleFieldChange} />
-            </label>
-            <label htmlFor="email">
-              Message:
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                style={{ resize: "none" }}
-                onChange={handleFieldChange}
-              />
-            </label>
-            <button type="submit">Send</button>
-          </form>
+          <FadeInWhenVisible>
+            <form id="contact-form" onSubmit={handleSubmit}>
+              <label htmlFor="name">
+                Name:
+                <input
+                  id="name"
+                  name="name"
+                  pattern="^(?=.*\S).+$"
+                  required
+                  title="Must be at least 1 non-space character"
+                  onChange={handleFieldChange}
+                />
+              </label>
+              <label htmlFor="email">
+                Email:
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  onChange={handleFieldChange}
+                />
+              </label>
+              <label htmlFor="email">
+                Message:
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  style={{ resize: "none" }}
+                  required
+                  onChange={handleFieldChange}
+                />
+              </label>
+              <button id="submit" type="submit">
+                <AnimateLink>{buttonState}</AnimateLink>
+              </button>
+            </form>
+          </FadeInWhenVisible>
         </div>
       </div>
     </div>
