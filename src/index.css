@@ -9,7 +9,7 @@ body {
   padding: 0;
   height: 100%;
   font-family: "Montserrat", sans-serif;
-  background: url("./images/circuitry.png");
+  background-image: url("./images/circuitry.png");
 }
 
 #root {

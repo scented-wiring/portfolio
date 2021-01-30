@@ -3,7 +3,7 @@
 }
 
 #contact-form {
-  height: 470px;
+  height: 469px;
   width: 400px;
   margin-top: 20px;
   padding: 15px 30px 20px 30px;
@@ -32,7 +32,7 @@ input:focus {
 
 textarea {
   margin-top: 10px;
-  height: 180px;
+  height: 179px;
   margin-bottom: 15px;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;

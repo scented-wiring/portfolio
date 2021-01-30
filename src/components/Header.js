@@ -8,13 +8,7 @@ const Header = () => {
     <div id="Header-wrap">
       <div id="Header">
         <div id="top">
-          <motion.div
-            initial={{ x: 600 }}
-            animate={{ x: 0 }}
-            transition={{ type: "spring", duration: 1 }}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
+          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             <HashLink smooth to="#">
               <div id="title">Tom Hammersley - Portfolio</div>
             </HashLink>
@@ -70,29 +64,24 @@ const Header = () => {
             </AnimateLink>
           </div>
         </div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          <div id="navbar">
-            <AnimateLink>
-              <HashLink smooth to="#About">
-                <div className="nav">About</div>
-              </HashLink>
-            </AnimateLink>
-            <AnimateLink>
-              <HashLink smooth to="#Projects">
-                <div className="nav">Projects</div>
-              </HashLink>
-            </AnimateLink>
-            <AnimateLink>
-              <HashLink smooth to="#Contact">
-                <div className="nav">Contact</div>
-              </HashLink>
-            </AnimateLink>
-          </div>
-        </motion.div>
+
+        <div id="navbar">
+          <AnimateLink>
+            <HashLink smooth to="#About">
+              <div className="nav">About</div>
+            </HashLink>
+          </AnimateLink>
+          <AnimateLink>
+            <HashLink smooth to="#Projects">
+              <div className="nav">Projects</div>
+            </HashLink>
+          </AnimateLink>
+          <AnimateLink>
+            <HashLink smooth to="#Contact">
+              <div className="nav">Contact</div>
+            </HashLink>
+          </AnimateLink>
+        </div>
       </div>
     </div>
   );

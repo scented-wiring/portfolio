@@ -14,9 +14,15 @@ const Projects = () => {
           <h1>Projects</h1>
           <p>
             Below is a list of projects I've developed from most recent to
-            earliest. Each has a link to its corresponding Github repo, if you
-            wish to view the code, and several have been deployed to Heroku and
-            have links to live demos.
+            earliest.
+            <br />
+            <br />
+            Each has a link to its corresponding Github repo, if you wish to
+            view the code, and several have been deployed to Heroku and have
+            links to live demos.
+            <br />
+            <br />
+            Note: Heroku apps can take a minute to load so please be patient :)
           </p>
           <div id="project-gallery">
             {projectsArray.map((project) => {
