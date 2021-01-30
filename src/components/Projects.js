@@ -11,6 +11,12 @@ const Projects = () => {
       <div className="box">
         <div className="heading">
           <h1>Projects</h1>
+          <p>
+            Below is a list of projects I've developed from most recent to
+            earliest. Each has a link to its corresponding Github repo, if you
+            wish to view the code, and several have been deployed to Heroku and
+            have links to live demos.
+          </p>
           <div id="project-gallery">
             {projectsArray.map((project) => {
               return (
@@ -35,9 +41,15 @@ const Projects = () => {
                     <div className="project-technologies">
                       {project.technologies}
                     </div>
-                    <AnimateLink>
-                      <div className="project-links">{project.links}</div>
-                    </AnimateLink>
+                    <div className="project-links">
+                      {project.links.map((link) => {
+                        return (
+                          <AnimateLink>
+                            <a href={link.href}>{link.destination}</a>
+                          </AnimateLink>
+                        );
+                      })}
+                    </div>
                   </div>
                 </div>
               );

@@ -22,8 +22,13 @@ a {
 }
 
 h1 {
-  margin: 0 0 25px 0;
+  margin: 0;
   padding: 0;
+}
+
+p {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .heading {

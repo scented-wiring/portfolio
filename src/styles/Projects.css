@@ -32,22 +32,26 @@
 }
 
 .project-description {
-  margin: 6px 8px 6px 8px;
+  margin: 0px 8px 3px 8px;
   text-align: center;
   font-size: 17px;
 }
 
 .project-technologies {
-  margin: 6px 8px 8px 8px;
+  margin: 6px 8px 20px 8px;
   font-family: "Josefin Sans", sans-serif;
   font-size: 18px;
 }
 
 .project-links {
   display: flex;
-  text-decoration: underline;
+  font-size: 14px;
 }
 
 .project-links a {
-  margin: 0 5px 0 5px;
+  font-weight: bold;
+  margin: 0 15px 0 15px;
+  border: 2px solid black;
+  background: white;
+  padding: 4px 10px 4px 10px;
 }

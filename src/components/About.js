@@ -10,20 +10,22 @@ const About = () => {
           <h1>About Me</h1>
           <img id="tom" src={tom} alt="Tom Hammersley" />
         </div>
-        In the spring of 2020 I decided to start on a path that would lead to a
-        new career in coding by enrolling on a software engineering course at
-        the online school Manchester Codes. Since then, I have dedicated all of
-        my free time to this pursuit, carefully going over course materials to
-        ensure I fully understand key concepts, reading documentation, following
-        tutorials and developing applications.
-        <br />
-        <br />I am pleased to say that in January 2021 I graduated from my
-        course and I now have experience across the full-stack and the skills I
-        need to take on a junior development role.
-        <br />
-        <br />
-        While seeking new career opportunities, I am continuing to develop
-        projects to expand on my knowledge and learn new technologies.
+        <p>
+          In the spring of 2020 I decided to start on a path that would lead to
+          a new career in coding by enrolling on a software engineering course
+          at the online school Manchester Codes. Since then, I have dedicated
+          all of my free time to this pursuit, carefully going over course
+          materials to ensure I fully understand key concepts, reading
+          documentation, following tutorials and developing applications.
+          <br />
+          <br />I am pleased to say that in January 2021 I graduated from my
+          course and I now have experience across the full-stack and the skills
+          I need to take on a junior development role.
+          <br />
+          <br />
+          While seeking new career opportunities, I am continuing to develop
+          projects to expand on my knowledge and learn new technologies.
+        </p>
         <div className="heading">
           <h2>Technologies</h2>
           <h3>Proficient in:</h3>
