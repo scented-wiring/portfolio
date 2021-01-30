@@ -15,13 +15,7 @@ const Header = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            <HashLink
-              to="#About"
-              scroll={(el) => {
-                el.scrollIntoView(true);
-                window.scrollBy(0, -150);
-              }}
-            >
+            <HashLink smooth to="#">
               <div id="title">Tom Hammersley - Portfolio</div>
             </HashLink>
           </motion.div>
@@ -83,35 +77,17 @@ const Header = () => {
         >
           <div id="navbar">
             <AnimateLink>
-              <HashLink
-                to="#About"
-                scroll={(el) => {
-                  el.scrollIntoView(true);
-                  window.scrollBy(0, -150);
-                }}
-              >
+              <HashLink smooth to="#About">
                 <div className="nav">About</div>
               </HashLink>
             </AnimateLink>
             <AnimateLink>
-              <HashLink
-                to="#Projects"
-                scroll={(el) => {
-                  el.scrollIntoView(true);
-                  window.scrollBy(0, -150);
-                }}
-              >
+              <HashLink smooth to="#Projects">
                 <div className="nav">Projects</div>
               </HashLink>
             </AnimateLink>
             <AnimateLink>
-              <HashLink
-                to="#Contact"
-                scroll={(el) => {
-                  el.scrollIntoView(true);
-                  window.scrollBy(0, -80);
-                }}
-              >
+              <HashLink smooth to="#Contact">
                 <div className="nav">Contact</div>
               </HashLink>
             </AnimateLink>

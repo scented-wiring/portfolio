@@ -47,7 +47,8 @@ const Contact = () => {
   };
 
   return (
-    <div id="Contact">
+    <div>
+      <div id="Contact"></div>
       <div className="box">
         <div className="heading">
           <h1>Contact</h1>

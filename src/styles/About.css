@@ -1,7 +1,5 @@
 #About {
-  display: flex;
-  flex-direction: column;
-  margin-top: 150px;
+  height: 160px;
 }
 
 #tom {

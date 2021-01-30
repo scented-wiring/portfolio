@@ -7,7 +7,8 @@ const Projects = () => {
   const [hover, setHover] = useState("");
 
   return (
-    <div id="Projects">
+    <div>
+      <div id="Projects"></div>
       <div className="box">
         <div className="heading">
           <h1>Projects</h1>
