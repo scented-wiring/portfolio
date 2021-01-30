@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { projectsArray } from "../projectsArray";
+import { AnimateLink } from "./helpers/index";
 import "../styles/Projects.css";
 
 const Projects = () => {
@@ -34,6 +35,9 @@ const Projects = () => {
                     <div className="project-technologies">
                       {project.technologies}
                     </div>
+                    <AnimateLink>
+                      <div className="project-links">{project.links}</div>
+                    </AnimateLink>
                   </div>
                 </div>
               );

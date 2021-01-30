@@ -28,15 +28,26 @@
 .project-title {
   font-family: "Josefin Sans", sans-serif;
   font-size: 35px;
+  margin-bottom: 3px;
 }
 
 .project-description {
-  margin: 3px 8px 10px 8px;
+  margin: 6px 8px 6px 8px;
   text-align: center;
   font-size: 17px;
 }
 
 .project-technologies {
+  margin: 6px 8px 8px 8px;
   font-family: "Josefin Sans", sans-serif;
   font-size: 18px;
+}
+
+.project-links {
+  display: flex;
+  text-decoration: underline;
+}
+
+.project-links a {
+  margin: 0 5px 0 5px;
 }
