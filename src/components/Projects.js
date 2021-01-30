@@ -52,7 +52,13 @@ const Projects = () => {
                       {project.links.map((link) => {
                         return (
                           <AnimateLink>
-                            <a href={link.href}>{link.destination}</a>
+                            <a
+                              href={link.href}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              {link.destination}
+                            </a>
                           </AnimateLink>
                         );
                       })}

@@ -64,13 +64,17 @@ const projectsArray = [
   },
   {
     name: "Weather",
-    description: "Displays 7 day forecast for selected city.",
+    description: "Displays 5 day forecast for selected British city.",
     technologies: "Built with React.",
     image: weather,
     links: [
       {
         href: "https://github.com/scented-wiring/weather-app",
         destination: "Github",
+      },
+      {
+        href: "https://gb-weather-app.herokuapp.com/",
+        destination: "Heroku",
       },
     ],
   },
@@ -83,6 +87,10 @@ const projectsArray = [
       {
         href: "https://github.com/scented-wiring/tech-test",
         destination: "Github",
+      },
+      {
+        href: "https://nasa-api-image-search.herokuapp.com/",
+        destination: "Heroku",
       },
     ],
   },
