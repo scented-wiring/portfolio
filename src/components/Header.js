@@ -1,9 +1,16 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 import { HashLink } from "react-router-hash-link";
-import { AnimateLink } from "./helpers/index";
 import "../styles/Header.css";
+import { AnimateLink, handleBeautify } from "./helpers/index";
 
 const Header = () => {
+  const [beautify, setBeautify] = useState(false);
+
+  const handleCheck = () => {
+    handleBeautify(beautify, setBeautify);
+  };
+
   return (
     <div id="Header-wrap">
       <div id="Header">
@@ -81,6 +88,15 @@ const Header = () => {
               <div className="nav">Contact</div>
             </HashLink>
           </AnimateLink>
+          <div id="beautify">
+            <label for="vehicle1">Beautify</label>
+            <input
+              type="checkbox"
+              id="beautify-check"
+              name="beautify"
+              onChange={handleCheck}
+            ></input>
+          </div>
         </div>
       </div>
     </div>

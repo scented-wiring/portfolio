@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat&family=Mountains+of+Christmas:wght@700&display=swap");
 
 html {
   height: 100%;
@@ -10,6 +10,10 @@ body {
   height: 100%;
   font-family: "Montserrat", sans-serif;
   background-image: url("./images/circuitry.png");
+}
+
+.beautify-body {
+  background-image: url("./images/computerloop.gif");
 }
 
 #root {

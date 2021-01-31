@@ -1,6 +1,6 @@
-import { FadeInWhenVisible } from "./helpers/index";
 import tom from "../images/me.jpg";
 import "../styles/About.css";
+import { FadeInWhenVisible } from "./helpers/index";
 
 const About = () => {
   return (

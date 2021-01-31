@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
+import $ from "jquery";
 
 const FadeInWhenVisible = ({ children }) => {
   const controls = useAnimation();
@@ -36,4 +37,37 @@ const AnimateLink = ({ children }) => {
   );
 };
 
-export { FadeInWhenVisible, AnimateLink };
+const handleBeautify = (beautify, setBeautify) => {
+  if (!beautify) {
+    setBeautify(true);
+    $(document.body).addClass("beautify-body");
+    $("#top").css({
+      "font-family": "Mountains of Christmas",
+      background: "yellow",
+      color: "black",
+    });
+    $("#navbar").css({ background: "#4F2517", color: "white" });
+    $(".box").css(
+      "background",
+      "linear-gradient(90deg, rgba(204,4,255,1) 0%, rgba(255,250,21,1) 35%, rgba(255,147,0,1) 75%)"
+    );
+    $("#contact-form").css("background", "yellow");
+    $("body, button, .project-title, .project-technologies").css(
+      "font-family",
+      "Mountains of Christmas"
+    );
+  } else {
+    setBeautify(false);
+    $(document.body).removeClass("beautify-body");
+    $("#top").css({ "font-family": "", background: "", color: "" });
+    $("#navbar").css({ background: "", color: "" });
+    $(".box").css("background", "");
+    $("#contact-form").css("background", "");
+    $("body, button, .project-title, .project-technologies").css(
+      "font-family",
+      ""
+    );
+  }
+};
+
+export { FadeInWhenVisible, AnimateLink, handleBeautify };

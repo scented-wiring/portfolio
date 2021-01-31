@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { projectsArray } from "../projectsArray";
-import { AnimateLink } from "./helpers/index";
 import "../styles/Projects.css";
+import { AnimateLink } from "./helpers/index";
 
 const Projects = () => {
   const [hover, setHover] = useState("");

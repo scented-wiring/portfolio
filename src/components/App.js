@@ -1,7 +1,7 @@
-import Header from "../components/Header";
 import About from "../components/About";
-import Projects from "../components/Projects";
 import Contact from "../components/Contact";
+import Header from "../components/Header";
+import Projects from "../components/Projects";
 
 const App = () => {
   return (

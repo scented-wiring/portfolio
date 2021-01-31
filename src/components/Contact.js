@@ -1,7 +1,7 @@
-import { FadeInWhenVisible, AnimateLink } from "./helpers/index";
-import { useState } from "react";
 import axios from "axios";
+import { useState } from "react";
 import "../styles/Contact.css";
+import { AnimateLink, FadeInWhenVisible } from "./helpers/index";
 
 const Contact = () => {
   const initialState = {
