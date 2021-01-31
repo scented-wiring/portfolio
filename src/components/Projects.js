@@ -51,7 +51,7 @@ const Projects = () => {
                     <div className="project-links">
                       {project.links.map((link) => {
                         return (
-                          <AnimateLink>
+                          <AnimateLink key={project.links.indexOf(link)}>
                             <a
                               href={link.href}
                               target="_blank"

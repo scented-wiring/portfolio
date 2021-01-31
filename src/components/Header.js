@@ -89,7 +89,7 @@ const Header = () => {
             </HashLink>
           </AnimateLink>
           <div id="beautify">
-            <label for="vehicle1">Beautify</label>
+            <label htmlFor="vehicle1">Beautify</label>
             <input
               type="checkbox"
               id="beautify-check"
