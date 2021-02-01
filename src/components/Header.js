@@ -57,18 +57,6 @@ const Header = () => {
                 </div>
               </a>
             </AnimateLink>
-            <AnimateLink>
-              <a
-                href="mailto:thomas.j.hammersley@gmail.com"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <div className="link">
-                  <i className="fas fa-envelope-square fa-3x"></i>
-                  Email
-                </div>
-              </a>
-            </AnimateLink>
           </div>
         </div>
 
