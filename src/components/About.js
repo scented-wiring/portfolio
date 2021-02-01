@@ -42,7 +42,7 @@ const About = () => {
                 <i className="fas fa-satellite-dish fa-3x"></i>express.js
               </div>
               <div className="technology">
-                <i className="fas fa-database fa-3x"></i>MySQL
+                <i className="fas fa-database fa-3x"></i>SQL
               </div>
               <div className="technology">
                 <i className="fas fa-check-circle fa-3x"></i>Jest & Enzyme

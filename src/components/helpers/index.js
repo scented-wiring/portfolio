@@ -42,7 +42,7 @@ const handleBeautify = (beautify, setBeautify) => {
     setBeautify(true);
     $(document.body).addClass("beautify-body");
     $("#top").css({
-      "font-family": "Mountains of Christmas",
+      "font-family": "Eater",
       background: "yellow",
       color: "black",
     });
@@ -52,7 +52,12 @@ const handleBeautify = (beautify, setBeautify) => {
       "linear-gradient(90deg, rgba(204,4,255,1) 0%, rgba(255,250,21,1) 35%, rgba(255,147,0,1) 75%)"
     );
     $("#contact-form").css("background", "yellow");
-    $("body, button, .project-title, .project-technologies").css(
+    $(".project-title").css({
+      "font-family": "Eater",
+      "margin-top": "5px",
+      "margin-bottom": "0",
+    });
+    $("body, button, .project-technologies").css(
       "font-family",
       "Mountains of Christmas"
     );
@@ -63,6 +68,11 @@ const handleBeautify = (beautify, setBeautify) => {
     $("#navbar").css({ background: "", color: "" });
     $(".box").css("background", "");
     $("#contact-form").css("background", "");
+    $(".project-title").css({
+      "font-family": "",
+      "margin-top": "",
+      "margin-bottom": "",
+    });
     $("body, button, .project-title, .project-technologies").css(
       "font-family",
       ""
