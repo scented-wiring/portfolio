@@ -17,9 +17,9 @@ const Projects = () => {
             earliest.
             <br />
             <br />
-            Each has a link to its corresponding Github repo, if you wish to
-            view the code, and several have been deployed to Heroku and have
-            links to live demos.
+            Each has a link to its corresponding Github repo if you wish to view
+            the code and several have been deployed to Heroku and have links to
+            live demos.
             <br />
             <br />
             Note: Heroku apps can take a minute to load so please be patient :)
@@ -42,26 +42,23 @@ const Projects = () => {
                     }
                   >
                     <div className="project-title">{project.name}</div>
+                    <div className="project-links">
+                      {project.links.map((link) => {
+                        return (
+                          <a href={link.href} target="_blank" rel="noreferrer">
+                            <AnimateLink key={project.links.indexOf(link)}>
+                              <i class="fas fa-link"></i>
+                              {link.destination}
+                            </AnimateLink>
+                          </a>
+                        );
+                      })}
+                    </div>
                     <div className="project-description">
                       {project.description}
                     </div>
                     <div className="project-technologies">
                       {project.technologies}
-                    </div>
-                    <div className="project-links">
-                      {project.links.map((link) => {
-                        return (
-                          <AnimateLink key={project.links.indexOf(link)}>
-                            <a
-                              href={link.href}
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              {link.destination}
-                            </a>
-                          </AnimateLink>
-                        );
-                      })}
                     </div>
                   </div>
                 </div>

@@ -23,6 +23,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
   height: 186px;
   width: 350px;
   background: rgb(255, 192, 203, 0.9);
@@ -32,18 +33,15 @@
   font-family: "Josefin Sans", sans-serif;
   text-decoration: underline;
   font-size: 25px;
-  margin-top: 23px;
-  margin-bottom: 10px;
 }
 
 .project-description {
-  margin: 0px 8px 3px 8px;
+  margin: 0 10px 0 10px;
   text-align: center;
   font-size: 17px;
 }
 
 .project-technologies {
-  margin: 6px 8px 20px 8px;
   font-family: "Josefin Sans", sans-serif;
   font-size: 18px;
 }
@@ -55,8 +53,12 @@
 
 .project-links a {
   font-weight: bold;
-  margin: 0 15px 0 15px;
   border: 2px solid black;
   background: white;
-  padding: 4px 10px 4px 10px;
+  padding: 4px 14px 4px 14px;
+  margin: 0 5px 0 5px;
+}
+
+.project-links i {
+  margin-right: 5px;
 }

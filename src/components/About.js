@@ -14,10 +14,10 @@ const About = () => {
         <p>
           In the spring of 2020 I decided to start on a path that would lead to
           a new career in coding by enrolling on a software engineering course
-          at the online school Manchester Codes. Since then, I have dedicated
-          all of my free time to this pursuit, carefully going over course
-          materials to ensure I fully understand key concepts, reading
-          documentation, following tutorials and developing applications.
+          at the online school Manchester Codes. Since then I have dedicated all
+          of my free time to this pursuit, developing applications, reading
+          documentation, following tutorials and carefully going over course
+          materials to ensure I fully understand key concepts.
           <br />
           <br />I am pleased to say that in January 2021 I graduated from my
           course and I now have experience across the full-stack and the skills
