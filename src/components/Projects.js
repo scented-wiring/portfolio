@@ -27,7 +27,7 @@ const Projects = () => {
           <div id="project-gallery">
             {projectsArray.map((project) => {
               return (
-                <SlideWhenVisible>
+                <SlideWhenVisible key={projectsArray.indexOf(project)}>
                   <div
                     className="project"
                     onMouseOver={() => setHover(project.name)}
@@ -53,9 +53,10 @@ const Projects = () => {
                               href={link.href}
                               target="_blank"
                               rel="noreferrer"
+                              key={project.links.indexOf(link)}
                             >
                               <AnimateLink key={project.links.indexOf(link)}>
-                                <i class="fas fa-link"></i>
+                                <i className="fas fa-link"></i>
                                 {link.destination}
                               </AnimateLink>
                             </a>
