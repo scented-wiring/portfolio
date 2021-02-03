@@ -42,7 +42,7 @@ const handleBeautify = (beautify, setBeautify) => {
     setBeautify(true);
     $(document.body).addClass("beautify-body");
     $("#top").css({
-      "font-family": "Eater",
+      "font-family": "Times New Roman",
       background: "yellow",
       color: "black",
     });
@@ -53,13 +53,13 @@ const handleBeautify = (beautify, setBeautify) => {
     );
     $("#contact-form").css("background", "yellow");
     $(".project-title").css({
-      "font-family": "Eater",
+      "font-family": "Times New Roman",
       "margin-top": "5px",
       "margin-bottom": "0",
     });
     $("body, button, .project-technologies").css(
       "font-family",
-      "Mountains of Christmas"
+      "Times New Roman"
     );
   } else {
     setBeautify(false);
