@@ -10,12 +10,8 @@
   display: flex;
   flex-direction: column;
   background: lightpink;
-  border: 6px double black;
-}
-
-label {
-  display: grid;
-  font-size: 18px;
+  border: 2px solid black;
+  box-shadow: 5px 5px gray;
 }
 
 input {
@@ -24,6 +20,8 @@ input {
   border-radius: 50px;
   border: 2px black solid;
   padding: 5px 10px 5px 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
 }
 
 input:focus {
@@ -32,7 +30,7 @@ input:focus {
 
 textarea {
   margin-top: 10px;
-  height: 179px;
+  height: 250px;
   margin-bottom: 15px;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -53,6 +51,7 @@ button {
   font-family: "Josefin Sans", sans-serif;
   font-size: 15px;
   padding: 11px 5px 9px 5px;
+  font-style: italic;
 }
 
 button:hover {
@@ -61,4 +60,8 @@ button:hover {
 
 button:focus {
   outline: none;
+}
+
+::placeholder {
+  font-style: italic;
 }

@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import "../styles/Contact.css";
-import { AnimateLink, FadeInWhenVisible } from "./helpers/index";
+import { AnimateLink, RollInWhenVisible } from "./helpers/index";
 
 const Contact = () => {
   const initialState = {
@@ -52,45 +52,39 @@ const Contact = () => {
       <div className="box">
         <div className="heading">
           <h1>Contact</h1>
-          <FadeInWhenVisible>
+          <RollInWhenVisible>
             <form id="contact-form" onSubmit={handleSubmit}>
-              <label htmlFor="name">
-                Name:
-                <input
-                  id="name"
-                  name="name"
-                  pattern="^(?=.*\S).+$"
-                  required
-                  title="Must be at least 1 non-space character"
-                  onChange={handleFieldChange}
-                />
-              </label>
-              <label htmlFor="email">
-                Email:
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  required
-                  onChange={handleFieldChange}
-                />
-              </label>
-              <label htmlFor="email">
-                Message:
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="5"
-                  style={{ resize: "none" }}
-                  required
-                  onChange={handleFieldChange}
-                />
-              </label>
+              <input
+                id="name"
+                name="name"
+                pattern="^(?=.*\S).+$"
+                required
+                title="Must be at least 1 non-space character"
+                onChange={handleFieldChange}
+                placeholder="Name"
+              />
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                onChange={handleFieldChange}
+                placeholder="Email"
+              />
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                style={{ resize: "none" }}
+                required
+                onChange={handleFieldChange}
+                placeholder="Message (e.g. 'Hi Tom, love your portfolio! Would you like a job?'"
+              />
               <button id="submit" type="submit">
                 <AnimateLink>{buttonState}</AnimateLink>
               </button>
             </form>
-          </FadeInWhenVisible>
+          </RollInWhenVisible>
         </div>
       </div>
     </div>
