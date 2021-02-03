@@ -3,8 +3,18 @@ import { projectsArray } from "../projectsArray";
 import "../styles/Projects.css";
 import { AnimateLink, SlideWhenVisible } from "./helpers/index";
 
-const Projects = () => {
+const Projects = ({ beautify }) => {
   const [hover, setHover] = useState("");
+
+  const setClassName = (name) => {
+    if (hover === name && !beautify) {
+      return "description-show";
+    } else if (hover === name && beautify) {
+      return "description-beautify";
+    } else {
+      return "description-hide";
+    }
+  };
 
   return (
     <div>
@@ -17,13 +27,14 @@ const Projects = () => {
             earliest.
             <br />
             <br />
-            Each has a link to its corresponding Github repo if you wish to view
-            the code and several have been deployed to Heroku and have links to
-            live demos.
-            <br />
-            <br />
-            Note: Heroku apps can take a minute to load so please be patient :)
+            Each has a link to its corresponding Github repo and several have
+            been deployed to Heroku and have links to live demos.
           </p>
+          <div id="note">
+            Note: Heroku apps sometimes take a minute to load so please be
+            patient <i className="far fa-smile-beam"></i>
+          </div>
+
           <div id="project-gallery">
             {projectsArray.map((project) => {
               return (
@@ -39,13 +50,7 @@ const Projects = () => {
                       alt={`${project.name} screenshot`}
                     />
 
-                    <div
-                      className={
-                        hover === project.name
-                          ? "description-show"
-                          : "description-hide"
-                      }
-                    >
+                    <div className={setClassName(project.name)}>
                       <div className="project-title">{project.name}</div>
                       <div className="project-links">
                         {project.links.map((link) => {

@@ -12,10 +12,10 @@ const About = () => {
           <img id="tom" src={tom} alt="Tom Hammersley" />
         </div>
         <p>
-          In the spring of 2020 I decided to start on a path that would lead to
-          a new career in coding by enrolling on a software engineering course
-          at the online school Manchester Codes. Since then I have dedicated all
-          of my free time to this pursuit, developing applications, reading
+          Hi! I'm Tom. In the spring of 2020 I decided to start on a path to a
+          new career in coding by enrolling on a software engineering course at
+          the online school Manchester Codes. Since then I have dedicated all of
+          my free time to this pursuit, developing applications, reading
           documentation, following tutorials and carefully going over course
           materials to ensure I fully understand key concepts.
           <br />

@@ -2,6 +2,15 @@
   height: 123px;
 }
 
+.heading {
+  text-align: center;
+}
+
+#note {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
 #project-gallery {
   display: flex;
   justify-content: center;
@@ -34,6 +43,19 @@
   transition: all 0.4s ease 0s;
 }
 
+.description-beautify {
+  top: 0;
+  opacity: 1;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 186px;
+  width: 350px;
+  background: yellow;
+}
+
 .project-title {
   font-family: "Josefin Sans", sans-serif;
   text-decoration: underline;
@@ -57,10 +79,11 @@
 }
 
 .project-links a {
+  display: flex;
   font-weight: bold;
   border: 2px solid black;
   background: white;
-  padding: 4px 14px 4px 14px;
+  padding: 5px 16px 4px 16px;
   margin: 0 5px 0 5px;
 }
 

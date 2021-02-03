@@ -81,7 +81,10 @@ const Contact = () => {
                 placeholder='Message (e.g. "Hi Tom, love your portfolio! Would you like a job?")'
               />
               <button id="submit" type="submit">
-                <AnimateLink>{buttonState}</AnimateLink>
+                <AnimateLink>
+                  <i className="far fa-envelope"></i>
+                  {buttonState}
+                </AnimateLink>
               </button>
             </form>
           </RollInWhenVisible>

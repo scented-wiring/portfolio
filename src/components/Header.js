@@ -1,12 +1,9 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import "../styles/Header.css";
 import { AnimateLink, handleBeautify } from "./helpers/index";
 
-const Header = () => {
-  const [beautify, setBeautify] = useState(false);
-
+const Header = ({ beautify, setBeautify }) => {
   const handleCheck = () => {
     handleBeautify(beautify, setBeautify);
   };
