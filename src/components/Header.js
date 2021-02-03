@@ -15,7 +15,13 @@ const Header = () => {
     <div id="Header-wrap">
       <div id="Header">
         <div id="top">
-          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <motion.div
+            initial={{ x: 800 }}
+            animate={{ x: 0 }}
+            transition={{ type: "spring", duration: 1.5 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
             <HashLink smooth to="#">
               <div id="title">Tom Hammersley - Portfolio</div>
             </HashLink>
@@ -59,33 +65,38 @@ const Header = () => {
             </AnimateLink>
           </div>
         </div>
-
-        <div id="navbar">
-          <AnimateLink>
-            <HashLink smooth to="#About">
-              <div className="nav">About</div>
-            </HashLink>
-          </AnimateLink>
-          <AnimateLink>
-            <HashLink smooth to="#Projects">
-              <div className="nav">Projects</div>
-            </HashLink>
-          </AnimateLink>
-          <AnimateLink>
-            <HashLink smooth to="#Contact">
-              <div className="nav">Contact</div>
-            </HashLink>
-          </AnimateLink>
-          <div id="beautify">
-            <label htmlFor="vehicle1">Beautify</label>
-            <input
-              type="checkbox"
-              id="beautify-check"
-              name="beautify"
-              onChange={handleCheck}
-            ></input>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          <div id="navbar">
+            <AnimateLink>
+              <HashLink smooth to="#About">
+                <div className="nav">About</div>
+              </HashLink>
+            </AnimateLink>
+            <AnimateLink>
+              <HashLink smooth to="#Projects">
+                <div className="nav">Projects</div>
+              </HashLink>
+            </AnimateLink>
+            <AnimateLink>
+              <HashLink smooth to="#Contact">
+                <div className="nav">Contact</div>
+              </HashLink>
+            </AnimateLink>
+            <div id="beautify">
+              <label htmlFor="vehicle1">Beautify</label>
+              <input
+                type="checkbox"
+                id="beautify-check"
+                name="beautify"
+                onChange={handleCheck}
+              ></input>
+            </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { projectsArray } from "../projectsArray";
 import "../styles/Projects.css";
-import { AnimateLink } from "./helpers/index";
+import { AnimateLink, SlideWhenVisible } from "./helpers/index";
 
 const Projects = () => {
   const [hover, setHover] = useState("");
@@ -27,41 +27,47 @@ const Projects = () => {
           <div id="project-gallery">
             {projectsArray.map((project) => {
               return (
-                <div
-                  className="project"
-                  onMouseOver={() => setHover(project.name)}
-                  onMouseOut={() => setHover("")}
-                  style={{ backgroundImage: `url(${project.image})` }}
-                  key={projectsArray.indexOf(project)}
-                >
+                <SlideWhenVisible>
                   <div
-                    className={
-                      hover === project.name
-                        ? "description-show"
-                        : "description"
-                    }
+                    className="project"
+                    onMouseOver={() => setHover(project.name)}
+                    onMouseOut={() => setHover("")}
+                    style={{ backgroundImage: `url(${project.image})` }}
+                    key={projectsArray.indexOf(project)}
                   >
-                    <div className="project-title">{project.name}</div>
-                    <div className="project-links">
-                      {project.links.map((link) => {
-                        return (
-                          <a href={link.href} target="_blank" rel="noreferrer">
-                            <AnimateLink key={project.links.indexOf(link)}>
-                              <i class="fas fa-link"></i>
-                              {link.destination}
-                            </AnimateLink>
-                          </a>
-                        );
-                      })}
-                    </div>
-                    <div className="project-description">
-                      {project.description}
-                    </div>
-                    <div className="project-technologies">
-                      {project.technologies}
+                    <div
+                      className={
+                        hover === project.name
+                          ? "description-show"
+                          : "description"
+                      }
+                    >
+                      <div className="project-title">{project.name}</div>
+                      <div className="project-links">
+                        {project.links.map((link) => {
+                          return (
+                            <a
+                              href={link.href}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <AnimateLink key={project.links.indexOf(link)}>
+                                <i class="fas fa-link"></i>
+                                {link.destination}
+                              </AnimateLink>
+                            </a>
+                          );
+                        })}
+                      </div>
+                      <div className="project-description">
+                        {project.description}
+                      </div>
+                      <div className="project-technologies">
+                        {project.technologies}
+                      </div>
                     </div>
                   </div>
-                </div>
+                </SlideWhenVisible>
               );
             })}
           </div>
