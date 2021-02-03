@@ -32,14 +32,17 @@ const Projects = () => {
                     className="project"
                     onMouseOver={() => setHover(project.name)}
                     onMouseOut={() => setHover("")}
-                    style={{ backgroundImage: `url(${project.image})` }}
                     key={projectsArray.indexOf(project)}
                   >
+                    <img
+                      src={project.image}
+                      alt={`${project.name} screenshot`}
+                    />
                     <div
                       className={
                         hover === project.name
                           ? "description-show"
-                          : "description"
+                          : "description-hide"
                       }
                     >
                       <div className="project-title">{project.name}</div>
