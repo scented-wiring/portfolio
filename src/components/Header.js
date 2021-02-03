@@ -16,7 +16,7 @@ const Header = () => {
       <div id="Header">
         <div id="top">
           <motion.div
-            initial={{ x: 800 }}
+            initial={{ x: 1000 }}
             animate={{ x: 0 }}
             transition={{ type: "spring", duration: 1.5 }}
             whileHover={{ scale: 1.1 }}

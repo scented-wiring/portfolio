@@ -38,6 +38,7 @@ const Projects = () => {
                       src={project.image}
                       alt={`${project.name} screenshot`}
                     />
+
                     <div
                       className={
                         hover === project.name

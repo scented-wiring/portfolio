@@ -78,7 +78,7 @@ const Contact = () => {
                 style={{ resize: "none" }}
                 required
                 onChange={handleFieldChange}
-                placeholder="Message (e.g. 'Hi Tom, love your portfolio! Would you like a job?'"
+                placeholder='Message (e.g. "Hi Tom, love your portfolio! Would you like a job?")'
               />
               <button id="submit" type="submit">
                 <AnimateLink>{buttonState}</AnimateLink>

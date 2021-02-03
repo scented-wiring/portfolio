@@ -5,7 +5,7 @@ import $ from "jquery";
 
 const FadeInWhenVisible = ({ children }) => {
   const controls = useAnimation();
-  const [ref, inView] = useInView();
+  const [ref, inView] = useInView({ threshold: 0.8 });
 
   useEffect(() => {
     if (inView) {
@@ -31,7 +31,7 @@ const FadeInWhenVisible = ({ children }) => {
 
 const SlideWhenVisible = ({ children }) => {
   const controls = useAnimation();
-  const [ref, inView] = useInView();
+  const [ref, inView] = useInView({ threshold: 0.8 });
 
   useEffect(() => {
     if (inView) {
@@ -57,7 +57,7 @@ const SlideWhenVisible = ({ children }) => {
 
 const RollInWhenVisible = ({ children }) => {
   const controls = useAnimation();
-  const [ref, inView] = useInView();
+  const [ref, inView] = useInView({ threshold: 0.5 });
 
   useEffect(() => {
     if (inView) {
@@ -92,9 +92,9 @@ const AnimateLink = ({ children }) => {
 const handleBeautify = (beautify, setBeautify) => {
   if (!beautify) {
     setBeautify(true);
+    $("*:not(i)").css("font-family", "Times New Roman");
     $(document.body).addClass("beautify-body");
     $("#top").css({
-      "font-family": "Times New Roman",
       background: "yellow",
       color: "black",
     });
@@ -104,31 +104,14 @@ const handleBeautify = (beautify, setBeautify) => {
       "linear-gradient(90deg, rgba(204,4,255,1) 0%, rgba(255,250,21,1) 35%, rgba(255,147,0,1) 75%)"
     );
     $("#contact-form").css("background", "yellow");
-    $(".project-title").css({
-      "font-family": "Times New Roman",
-      "margin-top": "5px",
-      "margin-bottom": "0",
-    });
-    $("body, button, .project-technologies").css(
-      "font-family",
-      "Times New Roman"
-    );
   } else {
     setBeautify(false);
+    $("*:not(i)").css("font-family", "");
     $(document.body).removeClass("beautify-body");
-    $("#top").css({ "font-family": "", background: "", color: "" });
+    $("#top").css({ background: "", color: "" });
     $("#navbar").css({ background: "", color: "" });
     $(".box").css("background", "");
     $("#contact-form").css("background", "");
-    $(".project-title").css({
-      "font-family": "",
-      "margin-top": "",
-      "margin-bottom": "",
-    });
-    $("body, button, .project-title, .project-technologies").css(
-      "font-family",
-      ""
-    );
   }
 };
 
