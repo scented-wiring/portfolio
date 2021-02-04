@@ -12,7 +12,7 @@ const About = () => {
           <img id="tom" src={tom} alt="Tom Hammersley" />
         </div>
         <p>
-          Hi! I'm Tom. In the spring of 2020 I decided to start on a path to a
+          Hi, I'm Tom. In the spring of 2020 I decided to start on a path to a
           new career in coding by enrolling on a software engineering course at
           the online school Manchester Codes. Since then I have dedicated all of
           my free time to this pursuit, developing applications, reading
@@ -45,9 +45,6 @@ const About = () => {
                 <i className="fas fa-database fa-3x"></i>SQL
               </div>
               <div className="technology">
-                <i className="fas fa-check-circle fa-3x"></i>Jest & Enzyme
-              </div>
-              <div className="technology">
                 <i className="fab fa-node fa-3x"></i>Node.js
               </div>
               <div className="technology">
@@ -55,6 +52,12 @@ const About = () => {
               </div>
               <div className="technology">
                 <i className="fas fa-paint-brush fa-3x"></i>CSS
+              </div>
+              <div className="technology">
+                <i className="fas fa-check-circle fa-3x"></i>Jest
+              </div>
+              <div className="technology">
+                <i className="fas fa-check-circle fa-3x"></i>Enzyme
               </div>
             </div>
           </FadeInWhenVisible>

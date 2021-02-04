@@ -31,7 +31,7 @@ const FadeInWhenVisible = ({ children }) => {
 
 const SlideWhenVisible = ({ children }) => {
   const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.8 });
+  const [ref, inView] = useInView();
 
   useEffect(() => {
     if (inView) {
@@ -57,7 +57,7 @@ const SlideWhenVisible = ({ children }) => {
 
 const RollInWhenVisible = ({ children }) => {
   const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.5 });
+  const [ref, inView] = useInView();
 
   useEffect(() => {
     if (inView) {

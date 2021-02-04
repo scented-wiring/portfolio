@@ -27,3 +27,26 @@ i {
   text-align: center;
   margin: 20px;
 }
+
+@media only screen and (max-width: 830px) {
+  .technology {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  #technologies {
+    margin: 0 20px 0 20px;
+  }
+
+  .technology {
+    font-size: 12px;
+    margin: 20px 10px 20px 10px;
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  #About {
+    height: 130px;
+  }
+}

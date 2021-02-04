@@ -20,7 +20,10 @@ const Header = ({ beautify, setBeautify }) => {
             whileTap={{ scale: 0.9 }}
           >
             <HashLink smooth to="#">
-              <div id="title">Tom Hammersley - Portfolio</div>
+              <div id="title">
+                <span id="small-screen">Tom Hammersley</span>
+                <span id="big-screen"> - Portfolio</span>
+              </div>
             </HashLink>
           </motion.div>
           <div id="links">

@@ -71,3 +71,89 @@ input[type="checkbox"] {
   zoom: 1.5;
   margin: 0;
 }
+
+@media only screen and (max-width: 700px) {
+  #title {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  #title {
+    font-size: 25px;
+  }
+
+  #links {
+    font-size: 10px;
+  }
+
+  #navbar {
+    font-size: 15px;
+  }
+
+  #beautify label {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .link {
+    margin-right: 10px;
+  }
+
+  .nav {
+    margin-right: 0px;
+  }
+
+  #beautify {
+    margin-right: 20px;
+  }
+
+  #big-screen {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  #navbar {
+    font-size: 12px;
+  }
+
+  #beautify label {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #title {
+    font-size: 20px;
+  }
+  #links {
+    font-size: 8px;
+  }
+  #navbar {
+    padding-left: 30px;
+  }
+  .nav {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .nav {
+    font-size: 12px;
+    margin-left: 2px;
+    margin-right: 4px;
+  }
+
+  #beautify label {
+    margin-right: 3px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  #title {
+    font-size: 18px;
+  }
+}
