@@ -127,12 +127,14 @@ input[type="checkbox"] {
 @media only screen and (max-width: 425px) {
   #title {
     font-size: 20px;
+    margin-left: 20px;
   }
   #links {
     font-size: 8px;
+    margin-right: 10px;
   }
   #navbar {
-    padding-left: 30px;
+    padding-left: 10px;
   }
   .nav {
     margin-left: 10px;
@@ -143,7 +145,7 @@ input[type="checkbox"] {
 @media only screen and (max-width: 340px) {
   .nav {
     font-size: 12px;
-    margin-left: 2px;
+    margin-left: 4px;
     margin-right: 4px;
   }
 
@@ -154,6 +156,6 @@ input[type="checkbox"] {
 
 @media only screen and (max-width: 300px) {
   #title {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
