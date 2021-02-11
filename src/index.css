@@ -57,6 +57,10 @@ p {
   p {
     font-size: 18px;
   }
+
+  .beautify-body {
+    background-size: 250px 250px;
+  }
 }
 
 @media only screen and (max-width: 700px) {

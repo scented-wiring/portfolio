@@ -52,43 +52,43 @@ const Contact = () => {
       <div className="box">
         <div className="heading">
           <h1>Contact</h1>
-          <RollInWhenVisible>
-            <form id="contact-form" onSubmit={handleSubmit}>
-              <input
-                id="name"
-                name="name"
-                pattern="^(?=.*\S).+$"
-                required
-                title="Must be at least 1 non-space character"
-                onChange={handleFieldChange}
-                placeholder="Name"
-              />
-              <input
-                id="email"
-                name="email"
-                type="email"
-                required
-                onChange={handleFieldChange}
-                placeholder="Email"
-              />
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                style={{ resize: "none" }}
-                required
-                onChange={handleFieldChange}
-                placeholder='Message (e.g. "Hi Tom, love your portfolio! Would you like a job?")'
-              />
-              <button id="submit" type="submit">
-                <AnimateLink>
-                  <i className="far fa-envelope"></i>
-                  {buttonState}
-                </AnimateLink>
-              </button>
-            </form>
-          </RollInWhenVisible>
         </div>
+        <RollInWhenVisible>
+          <form id="contact-form" onSubmit={handleSubmit}>
+            <input
+              id="name"
+              name="name"
+              pattern="^(?=.*\S).+$"
+              required
+              title="Must be at least 1 non-space character"
+              onChange={handleFieldChange}
+              placeholder="Name"
+            />
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              onChange={handleFieldChange}
+              placeholder="Email"
+            />
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              style={{ resize: "none" }}
+              required
+              onChange={handleFieldChange}
+              placeholder='Message (e.g. "Hi Tom, love your portfolio! Would you like a job?")'
+            />
+            <button id="submit" type="submit">
+              <AnimateLink>
+                <i className="far fa-envelope"></i>
+                {buttonState}
+              </AnimateLink>
+            </button>
+          </form>
+        </RollInWhenVisible>
       </div>
     </div>
   );

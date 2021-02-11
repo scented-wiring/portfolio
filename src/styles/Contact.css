@@ -8,7 +8,7 @@
   justify-content: space-around;
   height: 472px;
   width: 400px;
-  margin-top: 20px;
+  margin: 20px auto 0 auto;
   padding: 15px 30px 20px 30px;
   display: flex;
   flex-direction: column;
@@ -78,11 +78,17 @@ button:focus {
 @media only screen and (max-width: 500px) {
   #contact-form {
     width: 200px;
+    height: 350px;
+    box-shadow: 3px 3px gray;
   }
 
   input,
   textarea {
     font-size: 12px;
+  }
+
+  textarea {
+    height: 170px;
   }
 
   button {
@@ -96,10 +102,9 @@ button:focus {
 @media only screen and (max-width: 360px) {
   #contact-form {
     padding: 15px 10px 20px 10px;
-    display: flex;
-    flex-direction: column;
-    background: lightpink;
-    border: 2px solid black;
-    box-shadow: 5px 5px gray;
+  }
+
+  textarea {
+    height: 170px;
   }
 }
