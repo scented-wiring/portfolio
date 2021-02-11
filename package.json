@@ -24,8 +24,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "concurrently --kill-others-on-fail \"npm run server\" \"serve -s build\"",
-    "heroku-start": "concurrently --kill-others-on-fail \"npm run server\" \"react-scripts start\"",
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"react-scripts start\"",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"serve -s build\"",
     "server": "nodemon server.js",
     "build": "react-scripts build",
