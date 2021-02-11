@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import "../styles/Contact.css";
 import { AnimateLink, RollInWhenVisible } from "./helpers/index";
+require("dotenv").config();
 
 const Contact = () => {
   const initialState = {
@@ -20,7 +21,7 @@ const Contact = () => {
     if (buttonState === "SEND") {
       setButtonState("SENDING...");
       axios
-        .post("http://localhost:4000/contact", form)
+        .post(`http://localhost:${process.env.PORT || 4000}/contact`, form)
         .then(() => {
           setForm(initialState.form);
           document.getElementById("contact-form").reset();
