@@ -11,7 +11,7 @@ const projectsArray = [
   {
     name: "Portfolio",
     description: "This website!",
-    technologies: "Built with React and Express.",
+    technologies: "Built with React, and Framer Motion.",
     image: portfolio,
     links: [
       {
