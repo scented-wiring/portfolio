@@ -72,13 +72,13 @@ input[type="checkbox"] {
   margin: 0;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 745px) {
   #title {
     font-size: 30px;
   }
 }
 
-@media only screen and (max-width: 625px) {
+@media only screen and (max-width: 675px) {
   #title {
     font-size: 25px;
   }
@@ -96,7 +96,7 @@ input[type="checkbox"] {
   }
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 590px) {
   .link {
     margin-right: 10px;
   }
@@ -112,6 +112,11 @@ input[type="checkbox"] {
   #big-screen {
     display: none;
   }
+
+  input[type="checkbox"] {
+    zoom: 1;
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 470px) {
@@ -124,7 +129,7 @@ input[type="checkbox"] {
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 435px) {
   #title {
     font-size: 20px;
     margin-left: 20px;
@@ -143,6 +148,10 @@ input[type="checkbox"] {
 }
 
 @media only screen and (max-width: 340px) {
+  #title {
+    font-size: 17px;
+  }
+
   .nav {
     font-size: 12px;
     margin-left: 4px;
@@ -151,11 +160,5 @@ input[type="checkbox"] {
 
   #beautify label {
     margin-right: 3px;
-  }
-}
-
-@media only screen and (max-width: 300px) {
-  #title {
-    font-size: 17px;
   }
 }

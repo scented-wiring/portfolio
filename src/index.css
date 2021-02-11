@@ -101,6 +101,10 @@ p {
     margin-left: 10px;
     margin-right: 10px;
   }
+
+  .beautify-body {
+    background-size: 150px 150px;
+  }
 }
 
 @media only screen and (max-width: 395px) {

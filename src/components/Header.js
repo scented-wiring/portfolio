@@ -70,7 +70,7 @@ const Header = ({ beautify, setBeautify }) => {
                 rel="noreferrer"
               >
                 <div className="link">
-                  <i class="fas fa-envelope-square fa-3x"></i>
+                  <i className="fas fa-envelope-square fa-3x"></i>
                   Email
                 </div>
               </a>
