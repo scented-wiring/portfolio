@@ -20,7 +20,7 @@ const Contact = () => {
     if (buttonState === "SEND") {
       setButtonState("SENDING...");
       axios
-        .post("http://localhost:5000/contact", form)
+        .post("http://localhost:4000/contact", form)
         .then(() => {
           setForm(initialState.form);
           document.getElementById("contact-form").reset();

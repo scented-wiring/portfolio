@@ -4,7 +4,7 @@ const cors = require("cors");
 const nodemailer = require("nodemailer");
 const creds = require("./config");
 
-let port = 5000;
+let port = 4000;
 
 const app = express();
 app.use(cors());

@@ -23,7 +23,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "concurrently --kill-others-on-fail \"node run server\" \"serve -s build\"",
+    "start": "concurrently --kill-others-on-fail \"node server.js\" \"serve -s build\"",
     "dev": "concurrently --kill-others-on-fail \"node server.js\" \"react-scripts start\"",
     "server": "nodemon server.js",
     "build": "react-scripts build",
