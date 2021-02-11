@@ -24,11 +24,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "npm run start:dev",
-    "start:dev": "npm run start:client & npm run start:server",
-    "start:client": "serve -s build",
-    "start:server": "npm run server",
-    "server": "nodemon server.js",
+    "start": "concurrently --kill-others-on-fail \"node server.js\" \"serve -s build\"",
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
