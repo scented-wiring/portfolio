@@ -63,6 +63,18 @@ const Header = ({ beautify, setBeautify }) => {
                 </div>
               </a>
             </AnimateLink>
+            <AnimateLink>
+              <a
+                href="mailto:thomas.j.hammersley@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="link">
+                  <i class="fas fa-envelope-square fa-3x"></i>
+                  Email
+                </div>
+              </a>
+            </AnimateLink>
           </div>
         </div>
         <motion.div
@@ -79,11 +91,6 @@ const Header = ({ beautify, setBeautify }) => {
             <AnimateLink>
               <HashLink smooth to="#Projects">
                 <div className="nav">Projects</div>
-              </HashLink>
-            </AnimateLink>
-            <AnimateLink>
-              <HashLink smooth to="#Contact">
-                <div className="nav">Contact</div>
               </HashLink>
             </AnimateLink>
             <div id="beautify">
