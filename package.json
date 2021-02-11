@@ -23,13 +23,12 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently --kill-others-on-fail \"node run server\" \"serve -s build\"",
     "dev": "concurrently --kill-others-on-fail \"node server.js\" \"react-scripts start\"",
     "server": "nodemon server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "src:build": "cd src && npm run build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
