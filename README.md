@@ -6,11 +6,11 @@ A little about me and the projects I've developed. Hosted [here](https://tomhamm
 
 ## Desktop
 
-![Desktop screenshot](https://github.com/scented-wiring/portfolio/blob/master/readme-screenshots/portfolio-desktop.png)
+![Desktop screenshot](https://github.com/scented-wiring/portfolio/blob/main/readme-screenshots/portfolio-desktop.png)
 
 ## Mobile
 
-![Mobile screenshot](https://github.com/scented-wiring/portfolio/blob/master/readme-screenshots/portfolio-mobile.png)
+![Mobile screenshot](https://github.com/scented-wiring/portfolio/blob/main/readme-screenshots/portfolio-mobile.png)
 
 ## Built with
 
