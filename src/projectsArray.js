@@ -24,7 +24,7 @@ const projectsArray = [
   {
     name: "Animal Top Trumps",
     description:
-      "Create Top Trumps cards and battle them against a computer opponent. A Work in Progress.",
+      "Create Top Trumps cards and battle them against a computer AI. A Work in Progress.",
     technologies: "Built with React, Express and MySQL.",
     image: toptrumps,
     links: [
