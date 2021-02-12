@@ -8,6 +8,12 @@ const Header = ({ beautify, setBeautify }) => {
     handleBeautify(beautify, setBeautify);
   };
 
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -150;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+  };
+
   return (
     <div id="Header-wrap">
       <div id="Header">
@@ -84,12 +90,20 @@ const Header = ({ beautify, setBeautify }) => {
         >
           <div id="navbar">
             <AnimateLink>
-              <HashLink smooth to="#About">
+              <HashLink
+                smooth
+                to="/#About"
+                scroll={(el) => scrollWithOffset(el)}
+              >
                 <div className="nav">About</div>
               </HashLink>
             </AnimateLink>
             <AnimateLink>
-              <HashLink smooth to="#Projects">
+              <HashLink
+                smooth
+                to="/#Projects"
+                scroll={(el) => scrollWithOffset(el)}
+              >
                 <div className="nav">Projects</div>
               </HashLink>
             </AnimateLink>

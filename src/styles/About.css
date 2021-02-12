@@ -1,5 +1,5 @@
 #About {
-  height: 160px;
+  padding-top: 150px;
 }
 
 #tom {
@@ -7,6 +7,12 @@
   border: 2px solid black;
   border-radius: 100px;
   margin: 20px 0 10px 0;
+  transition: all 0.4s ease 0s;
+}
+
+#tom:hover {
+  filter: invert(1);
+  transition: all 0.4s ease 0s;
 }
 
 #technologies {
@@ -46,10 +52,6 @@ i {
 }
 
 @media only screen and (max-width: 625px) {
-  #About {
-    height: 130px;
-  }
-
   #tom {
     width: 80px;
   }

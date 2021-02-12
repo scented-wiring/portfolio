@@ -1,3 +1,4 @@
+import toptrumpslite from "./images/screenshots/toptrumpslite.png";
 import toptrumps from "./images/screenshots/toptrumps.png";
 import surrealestate from "./images/screenshots/surrealestate.png";
 import portfolio from "./images/screenshots/portfolio.png";
@@ -23,12 +24,29 @@ const projectsArray = [
   {
     name: "Animal Top Trumps",
     description:
-      "Create Top Trumps cards and battle them against a computer opponent.",
+      "Create Top Trumps cards and battle them against a computer opponent. A Work in Progress.",
     technologies: "Built with React, Express and MySQL.",
     image: toptrumps,
     links: [
       {
         href: "https://github.com/scented-wiring/animal-top-trumps",
+        destination: "Github",
+      },
+    ],
+  },
+  {
+    name: "Animal Top Trumps Lite",
+    description:
+      "A scaled down and completed version of the Animal Top Trumps project.",
+    technologies: "Built with React, and Framer Motion.",
+    image: toptrumpslite,
+    links: [
+      {
+        href: "https://animaltoptrumps-lite.herokuapp.com/",
+        destination: "Heroku",
+      },
+      {
+        href: "https://github.com/scented-wiring/animal-toptrumps-lite",
         destination: "Github",
       },
     ],

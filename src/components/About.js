@@ -4,8 +4,7 @@ import { FadeInWhenVisible } from "./helpers/index";
 
 const About = () => {
   return (
-    <div>
-      <div id="About"></div>
+    <div id="About">
       <div className="box">
         <div className="heading">
           <h1>About Me</h1>

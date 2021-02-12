@@ -17,14 +17,13 @@ const Projects = ({ beautify }) => {
   };
 
   return (
-    <div>
-      <div id="Projects"></div>
+    <div id="Projects">
       <div className="box">
         <div className="heading">
           <h1>Projects</h1>
           <p>
-            Below is a list of projects I've developed from most recent to
-            earliest.
+            Below is a list of some of the projects I've completed since I
+            started training to be a developer.
             <br />
             <br />
             Each has a link to its corresponding Github repo and several have
