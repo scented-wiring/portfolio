@@ -21,6 +21,10 @@
   width: 350px;
 }
 
+#Projects article {
+  text-align: center;
+}
+
 .description-hide {
   display: none;
 }
@@ -77,7 +81,7 @@
   font-weight: bold;
   border: 2px solid black;
   background: white;
-  padding: 5px 16px 4px 16px;
+  padding: 5px 16px 3px 16px;
   margin: 0 5px 0 5px;
 }
 
@@ -120,7 +124,7 @@
     font-weight: bold;
     border: 2px solid black;
     background: white;
-    padding: 3px 16px 2px 16px;
+    padding: 4px 16px 2px 16px;
     margin: 0 5px 0 5px;
   }
 }
@@ -154,7 +158,7 @@
     font-weight: bold;
     border: 2px solid black;
     background: white;
-    padding: 2px 16px 1px 16px;
+    padding: 3px 16px 1px 16px;
     margin: 0 3px 0 3px;
   }
 }
