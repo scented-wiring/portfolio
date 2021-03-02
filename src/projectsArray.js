@@ -1,5 +1,6 @@
 import toptrumpslite from "./images/screenshots/toptrumpslite.png";
 import toptrumps from "./images/screenshots/toptrumps.png";
+import fortunefish from "./images/screenshots/fortunefish.png";
 import surrealestate from "./images/screenshots/surrealestate.png";
 import portfolio from "./images/screenshots/portfolio.png";
 import pickup from "./images/screenshots/pickup.png";
@@ -47,6 +48,23 @@ const projectsArray = [
       },
       {
         href: "https://github.com/scented-wiring/animal-toptrumps-lite",
+        destination: "Github",
+      },
+    ],
+  },
+  {
+    name: "Fortune Fish",
+    description:
+      "Randomly determines the user's fortune. Inspired by the Christmas cracker trinket of the same name.",
+    technologies: "Built with React and TypeScript.",
+    image: fortunefish,
+    links: [
+      {
+        href: "https://fortune-fish.herokuapp.com/",
+        destination: "Heroku",
+      },
+      {
+        href: "https://github.com/scented-wiring/fortune-fish",
         destination: "Github",
       },
     ],
