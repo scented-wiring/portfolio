@@ -1,3 +1,4 @@
+import gamesearch from "./images/screenshots/gamesearch.png";
 import toptrumpslite from "./images/screenshots/toptrumpslite.png";
 import toptrumps from "./images/screenshots/toptrumps.png";
 import fortunefish from "./images/screenshots/fortunefish.png";
@@ -7,9 +8,24 @@ import pickup from "./images/screenshots/pickup.png";
 import weather from "./images/screenshots/weather.png";
 import nasa from "./images/screenshots/nasa.png";
 import booklibrary from "./images/screenshots/booklibrary.png";
-import cruiseships from "./images/screenshots/cruiseships.png";
 
 const projectsArray = [
+  {
+    name: "Gamesearch",
+    description: "Search for game titles and filter/order results",
+    technologies: "Built with React and TypeScript.",
+    image: gamesearch,
+    links: [
+      {
+        href: "https://gamesearch-app.herokuapp.com/",
+        destination: "Heroku",
+      },
+      {
+        href: "https://github.com/scented-wiring/gamesearch",
+        destination: "Github",
+      },
+    ],
+  },
   {
     name: "Portfolio",
     description: "This website!",
@@ -138,19 +154,6 @@ const projectsArray = [
     links: [
       {
         href: "https://github.com/scented-wiring/book-library-api",
-        destination: "Github",
-      },
-    ],
-  },
-  {
-    name: "Cruise Ships",
-    description:
-      "Control a cruise ship as it makes stops at ports from an itinerary.",
-    technologies: "Built with vanilla JS.",
-    image: cruiseships,
-    links: [
-      {
-        href: "https://github.com/scented-wiring/cruise-ships",
         destination: "Github",
       },
     ],
