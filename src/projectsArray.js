@@ -23,7 +23,7 @@ const projectsArray = [
   {
     name: "Portfolio",
     description: "This website!",
-    technologies: "Built with React and Framer Motion.",
+    technologies: "Built with React.",
     image: portfolio,
     links: [
       {
@@ -34,8 +34,7 @@ const projectsArray = [
   },
   {
     name: "Animal Top Trumps Lite",
-    description:
-      "Play a game of Top Trumps against an 'AI'",
+    description: "Play a game of Top Trumps against an 'AI'",
     technologies: "Built with React, and Framer Motion.",
     image: toptrumpslite,
     links: [
@@ -65,7 +64,7 @@ const projectsArray = [
         destination: "Github",
       },
     ],
-  }
+  },
 ];
 
 export { projectsArray };

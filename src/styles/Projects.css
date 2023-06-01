@@ -2,25 +2,6 @@
   text-align: center;
 }
 
-#note {
-  font-size: 0.8rem;
-  margin-bottom: 5px;
-}
-
-#project-gallery {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.project {
-  margin: 10px;
-  position: relative;
-  border: 2px solid black;
-  height: 186px;
-  width: 350px;
-}
-
 #Projects article {
   text-align: center;
 }
@@ -41,37 +22,51 @@
   background: rgb(255, 192, 203, 0.9);
 }
 
-.description-beautify {
-  top: 0;
-  opacity: 1;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 186px;
-  width: 350px;
-  background: yellow;
+#project-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
-.project-title {
-  font-family: "Josefin Sans", sans-serif;
-  text-decoration: underline;
-  font-size: 1.6rem;
+#project-gallery .project {
+  border: 2px solid black;
+  padding: 0 0 15px;
 }
 
-.project-description {
-  margin: 0 10px 0 10px;
+#project-gallery .project .title {
+  background-color: lightpink;
+  padding: 15px 20px;
+  border-bottom: 2px solid black;
+}
+
+#project-gallery h3 {
+  margin: 0;
+}
+
+#project-gallery h3,
+#project-gallery p {
   text-align: center;
+  padding: 0 20px;
 }
 
-.project-technologies {
+#project-gallery p.project-technologies {
   font-family: "Josefin Sans", sans-serif;
+}
+
+#project-gallery img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid black;
 }
 
 .project-links {
   display: flex;
   font-size: 0.9rem;
+  justify-content: center;
+  padding: 0 20px;
+  margin: 20px 0;
 }
 
 .project-links a {
@@ -85,4 +80,16 @@
 
 .project-links i {
   margin-right: 5px;
+}
+
+@media only screen and (max-width: 1025px) {
+  #project-gallery {
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #project-gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

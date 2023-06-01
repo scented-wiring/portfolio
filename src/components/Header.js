@@ -4,7 +4,7 @@ import "../styles/Header.css";
 const Header = () => {
   const scrollWithOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -150;
+    const yOffset = -195;
     window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
   };
 
@@ -41,11 +41,7 @@ const Header = () => {
                   </div>
                 </a>
 
-                <a
-                  href="mailto:thomas.j.hammersley@gmail.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href="mailto:thomas.j.hammersley@gmail.com" rel="noreferrer">
                   <div className="link transition">
                     <i className="fas fa-envelope-square fa-3x"></i>
                     Email
@@ -85,8 +81,6 @@ const Header = () => {
 
 window.onload = (event) => {
   const beautifyButton = document.querySelector("input.beautify");
-
-  console.log(beautifyButton);
 
   beautifyButton.addEventListener("click", function () {
     document.querySelector("body").classList.toggle("beautify");
