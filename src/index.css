@@ -4,18 +4,26 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
   height: 100%;
   font-family: "Montserrat", sans-serif;
   background-image: url("./images/circuitry.png");
+  font-size: 1.2rem;
 }
 
-.beautify-body {
+body.beautify {
   background-image: url("./images/computerloop.gif");
+}
+
+.transition {
+  transition: 0.3s ease-in-out;
 }
 
 #root {
   height: 100%;
+}
+
+#root > div {
+  padding-bottom: 5px;
 }
 
 a {
@@ -23,14 +31,38 @@ a {
   text-decoration: inherit;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1.4;
+  padding: 0;
+  margin: 0 0 1.6rem;
+}
+
 h1 {
   margin: 0;
   padding: 0;
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.9rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 p {
-  margin-left: 20px;
-  margin-right: 20px;
+  padding: 0;
+  margin: 0 0 1rem;
+  line-height: 1.4;
 }
 
 .heading {
@@ -40,20 +72,21 @@ p {
 }
 
 .box {
-  padding: 30px;
-  margin: 0 20% 50px 20%;
+  padding: 40px 50px;
+  max-width: 800px;
+  margin: 0 auto;
   background: white;
   border: 2px solid black;
-  font-size: 20px;
+  margin-bottom: 50px;
 }
 
-@media only screen and (max-width: 875px) {
-  .box {
-    margin: 0 15% 0 15%;
-  }
+article {
+  margin-bottom: 2.5em;
+}
 
-  p {
-    font-size: 18px;
+@media only screen and (max-width: 1025px) {
+  .box {
+    margin: 0 10% 50px 10%;
   }
 
   .beautify-body {
@@ -61,70 +94,38 @@ p {
   }
 }
 
-@media only screen and (max-width: 700px) {
-  p {
-    font-size: 17px;
+@media only screen and (min-width: 768px) {
+  html,
+  body {
+    overscroll-behavior: none;
   }
 }
 
-@media only screen and (max-width: 625px) {
-  .box {
-    margin: 0 10% 50px 10%;
-  }
-
+@media only screen and (max-width: 767px) {
   h1 {
-    font-size: 30px;
+    font-size: 1.5rem;
   }
 
   h2 {
-    font-size: 25px;
+    font-size: 1.6rem;
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 1.4rem;
   }
 }
 
-@media only screen and (max-width: 540px) {
-  p {
-    font-size: 15px;
-  }
+/* Beautify styling */
+
+body.beautify {
+  font-family: "Times New Roman", Times, serif;
 }
 
-@media only screen and (max-width: 500px) {
-  .box {
-    padding: 30px 10px 30px 10px;
-  }
-  p {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .beautify-body {
-    background-size: 50px 50px;
-  }
-}
-
-@media only screen and (max-width: 395px) {
-  h1 {
-    font-size: 20px;
-  }
-
-  h2 {
-    font-size: 18px;
-  }
-
-  h3 {
-    font-size: 16px;
-  }
-}
-
-@media only screen and (max-width: 300px) {
-  .box {
-    margin: 0 5% 50px 5%;
-  }
-
-  p {
-    font-size: 12px;
-  }
+body.beautify .box {
+  background: linear-gradient(
+    90deg,
+    rgba(204, 4, 255, 1) 0%,
+    rgba(255, 250, 21, 1) 35%,
+    rgba(255, 147, 0, 1) 75%
+  );
 }

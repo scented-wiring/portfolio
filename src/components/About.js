@@ -1,13 +1,12 @@
 import tom from "../images/me.jpg";
 import "../styles/About.css";
-import { FadeInWhenVisible } from "./helpers/index";
 
 const About = () => {
   return (
     <div id="About">
       <div className="box">
         <div className="heading">
-          <h1>About Me</h1>
+          <h2>About Me</h2>
           <img id="tom" src={tom} alt="Tom Hammersley" />
         </div>
         <article>
@@ -32,50 +31,46 @@ const About = () => {
           <h2>Technologies</h2>
           <h3>Proficient in:</h3>
         </div>
-        <FadeInWhenVisible>
-          <div id="technologies">
-            <div className="technology">
-              <i className="fab fa-js-square fa-3x"></i>Javascript
-            </div>
-            <div className="technology">
-              <i className="fab fa-react fa-3x"></i>React
-            </div>
-            <div className="technology">
-              <i className="fas fa-satellite-dish fa-3x"></i>express.js
-            </div>
-            <div className="technology">
-              <i className="fas fa-database fa-3x"></i>SQL
-            </div>
-            <div className="technology">
-              <i className="fab fa-node fa-3x"></i>Node.js
-            </div>
-            <div className="technology">
-              <i className="far fa-file-code fa-3x"></i>HTML
-            </div>
-            <div className="technology">
-              <i className="fas fa-paint-brush fa-3x"></i>CSS
-            </div>
-            <div className="technology">
-              <i className="fas fa-check-circle fa-3x"></i>Jest
-            </div>
-            <div className="technology">
-              <i className="fas fa-check-circle fa-3x"></i>Enzyme
-            </div>
+        <div id="technologies">
+          <div className="technology">
+            <i className="fab fa-js-square fa-3x"></i>Javascript
           </div>
-        </FadeInWhenVisible>
+          <div className="technology">
+            <i className="fab fa-react fa-3x"></i>React
+          </div>
+          <div className="technology">
+            <i className="fas fa-satellite-dish fa-3x"></i>express.js
+          </div>
+          <div className="technology">
+            <i className="fas fa-database fa-3x"></i>SQL
+          </div>
+          <div className="technology">
+            <i className="fab fa-node fa-3x"></i>Node.js
+          </div>
+          <div className="technology">
+            <i className="far fa-file-code fa-3x"></i>HTML
+          </div>
+          <div className="technology">
+            <i className="fas fa-paint-brush fa-3x"></i>CSS
+          </div>
+          <div className="technology">
+            <i className="fas fa-check-circle fa-3x"></i>Jest
+          </div>
+          <div className="technology">
+            <i className="fas fa-check-circle fa-3x"></i>Enzyme
+          </div>
+        </div>
         <div className="heading">
           <h3>Currently learning:</h3>
         </div>
-        <FadeInWhenVisible>
-          <div id="technologies">
-            <div className="technology">
-              <i className="fas fa-keyboard fa-3x"></i>Typescript
-            </div>
-            <div className="technology">
-              <i className="fab fa-vuejs fa-3x"></i>Vue
-            </div>
+        <div id="technologies">
+          <div className="technology">
+            <i className="fas fa-keyboard fa-3x"></i>Typescript
           </div>
-        </FadeInWhenVisible>
+          <div className="technology">
+            <i className="fab fa-vuejs fa-3x"></i>Vue
+          </div>
+        </div>
       </div>
     </div>
   );

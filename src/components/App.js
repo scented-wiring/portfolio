@@ -4,13 +4,12 @@ import Header from "../components/Header";
 import Projects from "../components/Projects";
 
 const App = () => {
-  const [beautify, setBeautify] = useState(false);
 
   return (
     <div>
-      <Header beautify={beautify} setBeautify={setBeautify} />
+      <Header />
       <About />
-      <Projects beautify={beautify} />
+      <Projects />
     </div>
   );
 };
