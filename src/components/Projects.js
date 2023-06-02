@@ -36,8 +36,8 @@ const Projects = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         key={project.links.indexOf(link)}
+                        className="transition"
                       >
-                        <i className="fas fa-link"></i>
                         {link.destination}
                       </a>
                     );
