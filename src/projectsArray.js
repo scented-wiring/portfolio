@@ -11,7 +11,7 @@ const projectsArray = [
     image: gamesearch,
     links: [
       {
-        href: "https://gamesearch-app.Appapp.com/",
+        href: "https://gamesearch-app.herokuapp.com/",
         destination: "App",
       },
       {
@@ -33,13 +33,13 @@ const projectsArray = [
     ],
   },
   {
-    name: "Animal Top Trumps Lite",
+    name: "Animal Top Trumps",
     description: "Play a game of Top Trumps against an 'AI'",
-    technologies: "Built with React, and Framer Motion.",
+    technologies: "Built with React.",
     image: toptrumpslite,
     links: [
       {
-        href: "https://animaltoptrumps-lite.Appapp.com/",
+        href: "https://animaltoptrumps-lite.herokuapp.com/",
         destination: "App",
       },
       {
@@ -56,7 +56,7 @@ const projectsArray = [
     image: fortunefish,
     links: [
       {
-        href: "https://fortune-fish.Appapp.com/",
+        href: "https://fortune-fish.herokuapp.com/",
         destination: "App",
       },
       {
