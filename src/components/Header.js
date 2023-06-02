@@ -48,15 +48,11 @@ const Header = () => {
 
           <div id="navbar" className="transition">
             <div className="wrapper">
-              <Link to="/">
-                <a className="nav" href="/">
-                  About
-                </a>
+              <Link to="/" className="nav">
+                About
               </Link>
-              <Link to="/projects">
-                <a className="nav" href="/projects">
-                  Projects
-                </a>
+              <Link to="/projects" className="nav">
+                Projects
               </Link>
               <div id="beautify">
                 <label htmlFor="vehicle1">Beautify</label>
