@@ -19,7 +19,7 @@ const Header = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="link transition">
+                  <div className="link">
                     <i className="fab fa-linkedin fa-3x"></i>
                     LinkedIn
                   </div>
@@ -30,14 +30,14 @@ const Header = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="link transition">
+                  <div className="link">
                     <i className="fab fa-github-square fa-3x"></i>
                     Github
                   </div>
                 </a>
 
                 <a href="mailto:thomas.j.hammersley@gmail.com" rel="noreferrer">
-                  <div className="link transition">
+                  <div className="link">
                     <i className="fas fa-envelope-square fa-3x"></i>
                     Email
                   </div>

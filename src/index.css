@@ -121,7 +121,13 @@ article {
 
 /* Beautify styling */
 
-body.beautify {
+body.beautify,
+body.beautify h1,
+body.beautify h2,
+body.beautify h3,
+body.beautify h4,
+body.beautify a,
+body.beautify #project-gallery p.project-technologies {
   font-family: "Times New Roman", Times, serif;
 }
 

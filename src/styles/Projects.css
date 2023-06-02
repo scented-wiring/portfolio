@@ -78,7 +78,6 @@
   padding: 0.3rem 1.3rem 0.4rem;
   margin: 0 5px 0 5px;
   font-size: 1rem;
-  border-radius: 10px;
 }
 
 .project-links a:hover {
@@ -101,4 +100,14 @@
   #project-gallery {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+/* Beautify styling */
+
+body.beautify #project-gallery .project {
+  background-color: lime;
+}
+
+body.beautify #project-gallery .project .title {
+  background-color: cyan;
 }

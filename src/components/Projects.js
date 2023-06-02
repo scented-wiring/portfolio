@@ -23,8 +23,11 @@ const Projects = () => {
         <div id="project-gallery">
           {projectsArray.map((project) => {
             return (
-              <div className="project" key={projectsArray.indexOf(project)}>
-                <div className="title">
+              <div
+                className="project transition"
+                key={projectsArray.indexOf(project)}
+              >
+                <div className="title transition">
                   <h3>{project.name}</h3>
                 </div>
                 <img src={project.image} alt={`${project.name} screenshot`} />
