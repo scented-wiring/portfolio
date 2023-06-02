@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <div id="Projects">
       <div className="box">
-        <div className="heading">
+        <div className="center">
           <h2>Projects</h2>
         </div>
         <article>
