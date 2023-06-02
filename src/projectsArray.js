@@ -11,8 +11,8 @@ const projectsArray = [
     image: gamesearch,
     links: [
       {
-        href: "https://gamesearch-app.herokuapp.com/",
-        destination: "Heroku",
+        href: "https://gamesearch-app.Appapp.com/",
+        destination: "App",
       },
       {
         href: "https://github.com/scented-wiring/gamesearch",
@@ -39,8 +39,8 @@ const projectsArray = [
     image: toptrumpslite,
     links: [
       {
-        href: "https://animaltoptrumps-lite.herokuapp.com/",
-        destination: "Heroku",
+        href: "https://animaltoptrumps-lite.Appapp.com/",
+        destination: "App",
       },
       {
         href: "https://github.com/scented-wiring/animal-toptrumps-lite",
@@ -56,8 +56,8 @@ const projectsArray = [
     image: fortunefish,
     links: [
       {
-        href: "https://fortune-fish.herokuapp.com/",
-        destination: "Heroku",
+        href: "https://fortune-fish.Appapp.com/",
+        destination: "App",
       },
       {
         href: "https://github.com/scented-wiring/fortune-fish",
