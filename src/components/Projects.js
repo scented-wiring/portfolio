@@ -1,3 +1,4 @@
+import React from "react";
 import { projectsArray } from "../projectsArray";
 import "../styles/Projects.css";
 
@@ -33,7 +34,7 @@ const Projects = () => {
                       <a
                         href={link.href}
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                         key={project.links.indexOf(link)}
                       >
                         <i className="fas fa-link"></i>

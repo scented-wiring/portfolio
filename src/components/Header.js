@@ -1,3 +1,4 @@
+import React from "react";
 import { HashLink } from "react-router-hash-link";
 import "../styles/Header.css";
 
@@ -22,7 +23,7 @@ const Header = () => {
                 <a
                   href="https://www.linkedin.com/in/tom-hammersley-3b0b4b203/"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   <div className="link transition">
                     <i className="fab fa-linkedin fa-3x"></i>
@@ -33,7 +34,7 @@ const Header = () => {
                 <a
                   href="https://github.com/scented-wiring"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   <div className="link transition">
                     <i className="fab fa-github-square fa-3x"></i>

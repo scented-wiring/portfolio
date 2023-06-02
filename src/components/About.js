@@ -1,3 +1,4 @@
+import React from "react";
 import tom from "../images/me.jpg";
 import "../styles/About.css";
 
