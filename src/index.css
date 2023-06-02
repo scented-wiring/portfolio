@@ -14,6 +14,10 @@ body.beautify {
   background-image: url("./images/computerloop.gif");
 }
 
+.page-body {
+  padding-top: 180px;
+}
+
 .transition {
   transition: 0.3s ease-in-out;
 }

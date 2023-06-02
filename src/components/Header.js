@@ -1,14 +1,8 @@
 import React from "react";
-import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 import "../styles/Header.css";
 
 const Header = () => {
-  const scrollWithOffset = (el) => {
-    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -195;
-    window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
-  };
-
   return (
     <div id="Header-wrap">
       <div id="Header">
@@ -54,20 +48,16 @@ const Header = () => {
 
           <div id="navbar" className="transition">
             <div className="wrapper">
-              <HashLink
-                smooth
-                to="/#About"
-                scroll={(el) => scrollWithOffset(el)}
-              >
-                <div className="nav">About</div>
-              </HashLink>
-              <HashLink
-                smooth
-                to="/#Projects"
-                scroll={(el) => scrollWithOffset(el)}
-              >
-                <div className="nav">Projects</div>
-              </HashLink>
+              <Link to="/">
+                <a className="nav" href="/">
+                  About
+                </a>
+              </Link>
+              <Link to="/projects">
+                <a className="nav" href="/projects">
+                  Projects
+                </a>
+              </Link>
               <div id="beautify">
                 <label htmlFor="vehicle1">Beautify</label>
                 <input type="checkbox" className="beautify"></input>
